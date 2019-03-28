@@ -28,7 +28,7 @@ class PostListing extends React.Component {
         <Col className="text-center">
           <p>{idx+1}</p>
           <Link to={post.path} key={post.title}>
-          {post.title}
+            {post.title}
           </Link>
         </Col>
       );
@@ -36,6 +36,7 @@ class PostListing extends React.Component {
         rows.push([]); // add a new row
       }
       rows[rows.length-1].push(col);
+      return null;
     });
     return rows;
   }

@@ -2,7 +2,7 @@ const { Helmet } = require("react-helmet");
 
 exports.onRenderBody = (
   { setHeadComponents, setHtmlAttributes, setBodyAttributes },
-  pluginOptions
+  pluginOptions //  eslint-disable-line
 ) => {
   const helmet = Helmet.renderStatic()
   setHtmlAttributes(helmet.htmlAttributes.toComponent())

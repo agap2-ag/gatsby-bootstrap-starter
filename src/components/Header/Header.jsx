@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "gatsby";
 import UserLinks from "../UserLinks/UserLinks";
 import LogoReact from '../../../static/logos/logo_react.svg';
 import LogoGatsby from '../../../static/logos/logo-1024.png';

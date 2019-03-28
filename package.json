@@ -4,7 +4,12 @@
   "version": "1.0.0",
   "author": "agap2-ag",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.17",
+    "@fortawesome/free-brands-svg-icons": "^5.8.1",
+    "@fortawesome/free-solid-svg-icons": "^5.8.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
     "gatsby": "2.0.91",
     "gatsby-image": "2.0.26",
     "gatsby-plugin-catch-links": "2.0.9",
@@ -41,10 +46,6 @@
     "url-join": "^4.0.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.17",
-    "@fortawesome/free-brands-svg-icons": "^5.8.1",
-    "@fortawesome/free-solid-svg-icons": "^5.8.1",
-    "@fortawesome/react-fontawesome": "^0.1.4",
     "babel-eslint": "^10.0.1",
     "cli-glob": "^0.1.0",
     "eslint": "^5.12.1",
@@ -53,7 +54,6 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.12.4",
-    "font-awesome": "^4.7.0",
     "gh-pages": "^2.0.1",
     "prettier": "^1.16.0",
     "remark-cli": "^6.0.1",

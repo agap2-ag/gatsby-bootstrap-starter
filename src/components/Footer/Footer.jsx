@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "gatsby";
-import UserLinks from "../UserLinks/UserLinks";
 import { Button } from 'react-bootstrap';
-import "./Footer.css";
+import UserLinks from "../UserLinks/UserLinks";
+import "./Footer.less";
 
 class Footer extends Component {
   render() {
@@ -19,15 +19,20 @@ class Footer extends Component {
           <p>{copyright}</p>
           <Link to="/about">About</Link>
           <div className="d-none">subscribe btn here</div>
-          <Link to={url}>
-            <Button variant="outline-warning">Subscribe</Button>
-          </Link>
+          <Button
+            href={url}
+            variant="outline-warning"
+            title="RSS"
+          >
+            Subscribe
+          </Button>
           <UserLinks config={config} labeled />
           <p>
-            Based on{" "}
-            <a href="https://github.com/Vagr9K/gatsby-advanced-starter">
+            Based on
+            {" "}
+            <a href="https://github.com/agap2-ag/gatsby-advanced-starter">
               Gatsby Advanced Starter
-            </a>.
+            </a>
           </p>
         </div>
       </footer>
