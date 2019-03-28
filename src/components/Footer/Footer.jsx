@@ -17,6 +17,7 @@ class Footer extends Component {
       <footer className="footer fixed-bottom">
         <div className="notice-container">
           <p>{copyright}</p>
+          <Link to="/about">About</Link>
           <div className="d-none">subscribe btn here</div>
           <Link to={url}>
             <Button variant="outline-warning">Subscribe</Button>

@@ -20,10 +20,11 @@ class PostListing extends React.Component {
   }
 
   getContainerRows() {
-    const postList = this.getPostList(),
-      rows = [], colNum = 3;
+    const postList = this.getPostList();
+    const rows = [];
+    const colNum = 3;
     postList.map((post, idx) => {
-      let col = (
+      const col = (
         <Col className="text-center">
           <p>{idx+1}</p>
           <Link to={post.path} key={post.title}>
@@ -43,13 +44,13 @@ class PostListing extends React.Component {
     const rows = this.getContainerRows();
     // https://react-bootstrap.github.io/layout/grid/
     return (
-      <Container fluid={true}>
+      <Container fluid>
         {
           rows.map((r) => (
             <Row className="mt-3">
-            {
-              r.map(c => c)  
-            }
+              {
+                r.map(c => c)
+              }
             </Row>
           ))
         }

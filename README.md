@@ -12,7 +12,7 @@ If you are a newcomer to Gatsby who's interested in the implementations of most 
 
 If you are interested in a foundation for building ultra-fast websites, you can use this project as a "minimal" starter.
 
-[Live Github Demo](https://agap2-ag.github.io/gatsby-generic_website)
+[Live Github Demo](https://agap2-ag.github.io/gatsby-bootstrap-starter)
 
 ## Features
 

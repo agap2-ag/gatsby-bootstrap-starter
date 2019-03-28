@@ -1,6 +1,6 @@
 import React, { Component } from "react";
+import { Button } from 'react-bootstrap';
 import _ from "lodash";
-import { Link } from "gatsby";
 
 class PostTags extends Component {
   render() {
@@ -9,13 +9,14 @@ class PostTags extends Component {
       <div className="post-tag-container">
         {tags &&
           tags.map(tag => (
-            <Link
+            <Button
+              variant="outline-secondary"
               key={tag}
-              style={{ textDecoration: "none" }}
-              to={`/tags/${_.kebabCase(tag)}`}
+              href={`/tags/${_.kebabCase(tag)}`}
+              title={tag}
             >
-              <button>{tag}</button>
-            </Link>
+              {tag}
+            </Button>
           ))}
       </div>
     );

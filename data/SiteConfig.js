@@ -26,19 +26,19 @@ const config = {
       label: "GitHub",
       url: "https://github.com/agap2-ag/gatsby-bootstrap-starter",
       iconClassName: "github",
-      iconBrand: 0
+      iconBrand: 1
     },
     {
       label: "Twitter",
       url: "",
       iconClassName: "twitter",
-      iconBrand: 0
+      iconBrand: 1
     },
     {
       label: "Email",
       url: "user@example.com",
       iconClassName: "envelope",
-      iconBrand: 1
+      iconBrand: 0
     }
   ],
   copyright: "Copyright © 2019. User", // Copyright string for the footer of the website and RSS feed.
