@@ -1,12 +1,13 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
-import { Container, Breadcrumb } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
 import PostTags from "../components/PostTags/PostTags";
 import SocialLinks from "../components/SocialLinks/SocialLinks";
+import Breadcrumbs from "../components/Breadcrumbs/Post";
 import { Icon } from '../components/Icon/Icon.jsx';
 import SEO from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
@@ -30,25 +31,7 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <Container fluid>
-          <Breadcrumb>
-            <Breadcrumb.Item href="/">
-              <Icon name="home" />
-            </Breadcrumb.Item>
-            <Breadcrumb.Item
-              title={post.category_id + ' category'}
-              active
-            >
-              {post.category_id}
-            </Breadcrumb.Item>
-            <Breadcrumb.Item
-              title={post.title}
-              active
-            >
-              {post.title}
-            </Breadcrumb.Item>
-          </Breadcrumb>
-        </Container>
+        <Breadcrumbs post={post} />
         <Container>
           <h1>{post.title}</h1>
           <hr />

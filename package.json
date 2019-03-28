@@ -80,8 +80,8 @@
     "clean:win": "rd /s/q public && rd /s/q .cache",
     "clean:win:cache": "rd /s/q .cache",
     "lint:js": "eslint --ext .js,.jsx .",
-    "lint:md": "remark content/posts/",
-    "write-good": "write-good $(glob 'content/posts/**/*.md')",
+    "lint:md": "remark content/**/",
+    "write-good": "write-good $(glob 'content/**/*.md')",
     "format:js": "prettier '**/*.{js,jsx}' --write"
   },
   "remarkConfig": {
