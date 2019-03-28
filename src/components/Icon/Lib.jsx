@@ -1,4 +1,5 @@
 import {
+  faHome,
   faEnvelope,
   faIgloo
 } from '@fortawesome/free-solid-svg-icons';
@@ -27,6 +28,7 @@ library.add(
   faEnvelope,
   faFacebook,
   faGithub,
+  faHome,
   faHtml5,
   faIgloo,
   faJs,
