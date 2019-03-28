@@ -2,6 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import { Container } from 'react-bootstrap';
+import urljoin from "url-join";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo/UserInfo";
 import Disqus from "../components/Disqus/Disqus";
@@ -31,7 +32,7 @@ export default class PostTemplate extends React.Component {
           <title>{`${post.title} | ${config.siteTitle}`}</title>
         </Helmet>
         <SEO postPath={slug} postNode={postNode} postSEO />
-        <Breadcrumbs post={post} />
+        <Breadcrumbs post={post} rootPath={urljoin(config.siteUrl, config.pathPrefix)} />
         <Container>
           <h1>{post.title}</h1>
           <hr />

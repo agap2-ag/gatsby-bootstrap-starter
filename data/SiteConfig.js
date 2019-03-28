@@ -3,6 +3,7 @@ const config = {
   siteTitleShort: "Generic", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "GatsbyJS Bootstrap Starter", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
+  // for local deployment add http://localhost:8000 below and remove pathPrefix value
   siteUrl: "https://agap2-ag.github.io", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-bootstrap-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-bootstrap-starter/.
   siteDescription: "Generic content website based on bootstrap.", // Website description used for RSS feeds/meta description tag.

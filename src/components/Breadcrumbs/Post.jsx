@@ -12,7 +12,7 @@ class Breadcrumbs extends Component {
     return (
       <Container  className="breadcrumbs" fluid>
         <Breadcrumb>
-          <Breadcrumb.Item href="/">
+          <Breadcrumb.Item href={this.props.rootPath}>
             <Icon name="home" />
           </Breadcrumb.Item>
           <Breadcrumb.Item

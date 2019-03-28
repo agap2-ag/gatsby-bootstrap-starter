@@ -9,10 +9,11 @@ class Breadcrumbs extends Component {
   }
 
   render() {
+    const { config } = this.props;
     return (
       <Container  className="breadcrumbs" fluid>
         <Breadcrumb>
-          <Breadcrumb.Item href="/">
+          <Breadcrumb.Item href={this.props.rootPath}>
             <Icon name="home" />
           </Breadcrumb.Item>
           <Breadcrumb.Item

@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import { Container } from "react-bootstrap";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing/PostListing";
@@ -13,6 +14,10 @@ class Index extends React.Component {
       <Layout>
         <Helmet title={config.siteTitle} />
         <SEO />
+        <Container className="text-center my-3">
+          <h1>Browse Published Content</h1>
+          <hr />
+        </Container>
         <PostListing postEdges={postEdges} />
       </Layout>
     );

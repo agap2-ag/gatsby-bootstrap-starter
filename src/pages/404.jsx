@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import urljoin from "url-join";
 import { Container, Media } from 'react-bootstrap';
 import Breadcrumbs from "../components/Breadcrumbs/Page";
 import Layout from "../layout";
@@ -11,7 +12,7 @@ export default () => {
   return (
     <Layout>
       <Helmet title={`${pn} | ${config.siteTitle}`} />
-      <Breadcrumbs pageName={pn} />
+      <Breadcrumbs pageName={pn} rootPath={urljoin(config.siteUrl, config.pathPrefix)} />
       <Container>
         <h1>Ooops...</h1>
         <h2>Should something be here?</h2>

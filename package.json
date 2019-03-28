@@ -70,6 +70,7 @@
   "main": "n/a",
   "scripts": {
     "deploy": "npm run clean && npm run build:pp && gh-pages -d public",
+    "deploy:win": "npm run clean:win && npm run build:pp && gh-pages -d public",
     "develop": "gatsby develop",
     "dev": "npm run develop",
     "serve": "gatsby serve",
