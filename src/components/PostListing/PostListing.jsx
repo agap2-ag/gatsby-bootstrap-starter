@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
 class PostListing extends React.Component {
   getPostList() {
@@ -26,10 +26,26 @@ class PostListing extends React.Component {
     postList.map((post, idx) => {
       const col = (
         <Col className="text-center">
-          <p>{idx+1}</p>
-          <Link to={post.path} key={post.title}>
-            {post.title}
-          </Link>
+          <Card>
+            <Card.Img
+              variant="top"
+              src={'https://via.placeholder.com/64x64/00000/ffdd00?text=' + (idx+1)}
+            />
+            <Card.Body>
+              <Card.Title>
+                <Link
+                  to={post.path}
+                  key={post.title}
+                >
+                  {post.title}
+                </Link>
+              </Card.Title>
+              <Card.Text>
+                {post.title} content.
+              </Card.Text>
+              <Button href={post.path} variant="primary">Read more</Button>
+            </Card.Body>
+          </Card>
         </Col>
       );
       if(idx%colNum === 0) {
