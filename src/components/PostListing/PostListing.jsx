@@ -21,29 +21,38 @@ class PostListing extends React.Component {
 
   getContainerRows() {
     const postList = this.getPostList();
+    const rp = this.props.rootPath;
     const rows = [];
     const colNum = 3;
     postList.map((post, idx) => {
+      const tagsTxt = post.tags ? post.tags.join(' | ') : '';
+
       const col = (
         <Col className="text-center">
           <Card>
             <Card.Img
               variant="top"
-              src={'https://via.placeholder.com/64x64/00000/ffdd00?text=' + (idx+1)}
+              src={post.cover}
             />
             <Card.Body>
               <Card.Title>
-                <Link
-                  to={post.path}
-                  key={post.title}
-                >
-                  {post.title}
-                </Link>
+                <h3>
+                  <Link
+                    to={post.path}
+                    key={post.title}
+                  >
+                    {post.title}
+                  </Link>
+                </h3>
+                <p className="text-muted">{post.date.slice(0, 10)}</p>
               </Card.Title>
               <Card.Text>
-                {post.title} content.
+                <p>{post.excerpt}</p>
+                <p className="text-muted">
+                  {tagsTxt}
+                </p>
               </Card.Text>
-              <Button href={post.path} variant="primary">Read more</Button>
+              <Button href={rp + post.path} variant="outline-info">Read more</Button>
             </Card.Body>
           </Card>
         </Col>
