@@ -23,7 +23,7 @@ class Breadcrumbs extends Component {
           </Breadcrumb.Item>
           <Breadcrumb.Item
             title={catName + ' category'}
-            href={urljoin('/', 'category', category)}
+            href={urljoin('category', category)}
           >
             {catName}
           </Breadcrumb.Item>

@@ -6,13 +6,17 @@
 
 A starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/) based on [Gatsby Advanced Starter](https://github.com/agap2-ag/gatsby-advanced-starter) skeleton and [React Bootstrap](https://react-bootstrap.github.io/), using [Gatsby Less plugin](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-less).
 
+## [Live GitHub Demo](https://agap2-ag.github.io/gatsby-bootstrap-starter)
+
+<div align="center">
+    <img src="static/img/gatsby-bootstrap-starter-homepage.png" alt="Homepage Screenshot"/>
+</div>
+
 ## How can I use this?
 
 If you are a newcomer to Gatsby who's interested in the implementations of most needed features, this is a great place to start.
 
 If you are interested in a foundation for building ultra-fast websites, you can use this project as a "minimal" starter.
-
-[Live Github Demo](https://agap2-ag.github.io/gatsby-bootstrap-starter)
 
 ## Features
 
@@ -126,19 +130,19 @@ module.exports = {
       label: "GitHub",
       url: "https://github.com/agap2-ag/gatsby-bootstrap-starter",
       iconClassName: "github",
-      iconBrand: 0
+      iconBrand: 1
     },
     {
       label: "Twitter",
       url: "",
       iconClassName: "twitter",
-      iconBrand: 0
+      iconBrand: 1
     },
     {
       label: "Email",
       url: "user@example.com",
       iconClassName: "envelope",
-      iconBrand: 1
+      iconBrand: 0
     }
   ],
   copyright: "Copyright © 2019. User", // Copyright string for the footer of the website and RSS feed.
