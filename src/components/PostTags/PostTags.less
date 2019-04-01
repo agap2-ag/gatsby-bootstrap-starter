@@ -1,0 +1,18 @@
+@btn_spce: .3rem;
+.post-tag-container {
+  .btn {
+    font-family: monospace;
+    font-size: .7rem;
+
+    margin: @btn_spce;
+    padding: @btn_spce/10 @btn_spce;
+
+    &:first-of-type {
+      margin: @btn_spce @btn_spce @btn_spce 0;
+    }
+
+    &:last-of-type {
+      margin: @btn_spce 0 @btn_spce @btn_spce;
+    }
+  }
+}

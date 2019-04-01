@@ -140,7 +140,7 @@ module.exports = {
     },
     {
       label: "Email",
-      url: "user@example.com",
+      url: "mailto:user@example.com",
       iconClassName: "envelope",
       iconBrand: 0
     }
