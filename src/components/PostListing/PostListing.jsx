@@ -10,6 +10,7 @@ class PostListing extends React.Component {
         path: postEdge.node.fields.slug,
         tags: postEdge.node.frontmatter.tags,
         cover: postEdge.node.frontmatter.cover,
+        category: postEdge.node.frontmatter.category,
         title: postEdge.node.frontmatter.title,
         date: postEdge.node.fields.date,
         excerpt: postEdge.node.excerpt,
@@ -25,8 +26,12 @@ class PostListing extends React.Component {
     const rows = [];
     const colNum = 3;
     postList.map((post, idx) => {
-      const tagsTxt = post.tags ? post.tags.join(' | ') : '';
-
+      const tagsList = post.tags ?
+        <p className="text-muted">
+          {post.tags.join(' | ')}
+        </p>
+        :
+        '';
       const col = (
         <Col className="text-center">
           <Card>
@@ -40,17 +45,16 @@ class PostListing extends React.Component {
                   <Link
                     to={post.path}
                     key={post.title}
+                    className="card-link"
                   >
                     {post.title}
                   </Link>
                 </h3>
-                <p className="text-muted">{post.date.slice(0, 10)}</p>
+                <p className="text-muted">Posted on {post.category} ({post.date.slice(0, 10)})</p>
               </Card.Title>
               <Card.Text>
                 <p>{post.excerpt}</p>
-                <p className="text-muted">
-                  {tagsTxt}
-                </p>
+                {tagsList}
               </Card.Text>
               <Button href={rp + post.path} variant="outline-info">Read more</Button>
             </Card.Body>

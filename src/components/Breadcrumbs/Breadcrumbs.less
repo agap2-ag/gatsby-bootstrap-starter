@@ -6,8 +6,13 @@
   .breadcrumb {
     border-radius: 0;
 
-    &-item.active span {
-      font-weight: bold;
+    &-item {
+      &.active span {
+        font-weight: bold;
+      }
+      +.breadcrumb-item::before {
+        content: '\203a';
+      }
     }
   }
 }

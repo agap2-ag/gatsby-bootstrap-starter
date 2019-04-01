@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Breadcrumb } from 'react-bootstrap';
+import urljoin from "url-join";
 import { Icon } from '../Icon/Icon.jsx';
 import "./Breadcrumbs.less";
 
@@ -9,6 +10,11 @@ class Breadcrumbs extends Component {
   }
 
   render() {
+    const category = this.props.post.category;
+    const postTitle = this.props.post.title;
+    const catName = typeof category == "string" ?
+      category.charAt(0).toUpperCase() + category.substring(1) :
+      'Unknown';
     return (
       <Container  className="breadcrumbs" fluid>
         <Breadcrumb>
@@ -16,15 +22,16 @@ class Breadcrumbs extends Component {
             <Icon name="home" />
           </Breadcrumb.Item>
           <Breadcrumb.Item
-            title={this.props.post.category_id + ' category'}
+            title={catName + ' category'}
+            href={urljoin('/', 'category', category)}
           >
-            {this.props.post.category_id}
+            {catName}
           </Breadcrumb.Item>
           <Breadcrumb.Item
-            title={this.props.post.title}
+            title={postTitle}
             active
           >
-            {this.props.post.title}
+            {postTitle}
           </Breadcrumb.Item>
         </Breadcrumb>
       </Container>
