@@ -12,7 +12,7 @@ class Header extends Component {
     const { config } = this.props;
     return (
       <header className="header sticky-top">
-        <Link to={config.pathPrefix}>
+        <Link title={config.siteTitle} to="/">
           <img src={LogoGatsby} className="logo-circular" alt="Gatsby" />
           <IconWrapped name="bootstrap" brand="1" />
           <img src={LogoReact} className="logo-circular logo-rotate" alt="React" />

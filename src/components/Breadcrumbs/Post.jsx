@@ -17,7 +17,6 @@ class Breadcrumbs extends Component {
           </Breadcrumb.Item>
           <Breadcrumb.Item
             title={this.props.post.category_id + ' category'}
-            active
           >
             {this.props.post.category_id}
           </Breadcrumb.Item>
