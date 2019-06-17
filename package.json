@@ -65,7 +65,12 @@
     "write-good": "^1.0.1"
   },
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "posts",
+    "blog",
+    "bootstrap",
+    "less",
+    "font-awesome"
   ],
   "license": "MIT",
   "main": "n/a",
