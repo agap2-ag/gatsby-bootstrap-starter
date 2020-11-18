@@ -4,7 +4,7 @@
 
 # Gatsby Bootstrap Starter
 
-A starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/) based on [Gatsby Advanced Starter](https://github.com/agap2-ag/gatsby-advanced-starter) skeleton and [React Bootstrap](https://react-bootstrap.github.io/), using [Gatsby Less plugin](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-less).
+A starter skeleton with advanced features for [Gatsby](https://github.com/gatsbyjs/gatsby/) based on [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter) skeleton and [React Bootstrap](https://react-bootstrap.github.io/), using [Gatsby Less plugin](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-less).
 
 ## [Live GitHub Demo](https://agap2-ag.github.io/gatsby-bootstrap-starter)
 
